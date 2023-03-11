@@ -1,0 +1,3 @@
+D:/User/STM32_Code/Test/cmake-build-debug/CMakeFiles/Test.elf.dir
+D:/User/STM32_Code/Test/cmake-build-debug/CMakeFiles/edit_cache.dir
+D:/User/STM32_Code/Test/cmake-build-debug/CMakeFiles/rebuild_cache.dir
