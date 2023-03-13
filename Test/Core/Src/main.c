@@ -37,9 +37,9 @@ uint8_t Toggle_Run_Led_Flag = 0;
 uint8_t Uart1_Rx_Buf[MAX_UART1_LENBUF] = {0};
 uint16_t Uart1_Rx_Buf_p = 0;
 uint16_t Uart1_Rx_Message_Num = 0;
-enum Uart3_Rx_Statue{
+enum Uart1_Rx_Statues{
     go_on,wait
-}Uart3_Rx_Statue = go_on;
+}Uart1_Rx_Statue;
 /* USER CODE END PTD */
 
 /* Private define ------------------------------------------------------------*/
@@ -100,6 +100,8 @@ int main(void)
   /* USER CODE BEGIN 2 */
   // 串口接收函数起始中断
   HAL_UART_Receive_IT(&huart1,(uint8_t*)Uart1_Rx_Buf,1);
+  // 设置初始状态
+  Uart1_Rx_Statue = go_on;
   /* USER CODE END 2 */
 
   /* Infinite loop */
@@ -111,14 +113,6 @@ int main(void)
         Toggle_Run_Led_Flag = 0;
         HAL_GPIO_TogglePin(Run_GPIO_Port,Run_Pin);
     }
-
-    // 串口发送数据s
-    //uint8_t data[12] = "you press A!";
-    uint8_t data[3]="y\r\n";
-    HAL_UART_Transmit(&huart1,data,1,0Xff);
-
-    // 延迟
-    HAL_Delay(1000);
     /* USER CODE BEGIN 3 */
   }
   /* USER CODE END 3 */
@@ -168,11 +162,9 @@ void SystemClock_Config(void)
  * 接受中断回调函数
  */
 void HAL_UART_RxCpltCallback(UART_HandleTypeDef *UartHandle) {
-    HAL_UART_Transmit(&huart1,(uint8_t*)&Uart1_Rx_Buf[0],1,0xff);
-    HAL_UART_Transmit(&huart1,(uint8_t*)&Uart1_Rx_Buf[1],1,0xff);
-    HAL_UART_Transmit(&huart1,(uint8_t*)&Uart1_Rx_Buf[2],1,0xff);
-    if (UartHandle == &huart1) {//如果接受到串口3的数据
-        switch (Uart3_Rx_Statue) {
+    // 数据缓冲区
+    if (UartHandle == &huart1) {//如果接受到串口1的数据
+        switch (Uart1_Rx_Statue) {
             case go_on:
                 if (Uart1_Rx_Buf[Uart1_Rx_Buf_p] != '\r') {//非\r 非\n--保持当前状态（go_on）
                     Uart1_Rx_Buf_p++;
@@ -180,7 +172,7 @@ void HAL_UART_RxCpltCallback(UART_HandleTypeDef *UartHandle) {
                         Uart1_Rx_Buf_p = 0;
                     }
                 } else {//遇到\r--需要改变状态(go_on -> wait)
-                    Uart3_Rx_Statue = wait;
+                    Uart1_Rx_Statue = wait;
                 }
                 break;
             case wait:
@@ -193,7 +185,7 @@ void HAL_UART_RxCpltCallback(UART_HandleTypeDef *UartHandle) {
                         Uart1_Rx_Buf_p = 0;
                     }
                     //状态设置为继续
-                    Uart3_Rx_Statue = go_on;
+                    Uart1_Rx_Statue = go_on;
                 }
                 break;
             default:

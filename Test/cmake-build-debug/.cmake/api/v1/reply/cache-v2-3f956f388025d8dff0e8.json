@@ -163,7 +163,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "d:/User/STM32_Code/Test/cmake-build-debug"
+			"value" : "d:/sample/STM32F103C8T6/Test/cmake-build-debug"
 		},
 		{
 			"name" : "CMAKE_CACHE_MAJOR_VERSION",
@@ -739,7 +739,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "D:/User/STM32_Code/Test"
+			"value" : "D:/sample/STM32F103C8T6/Test"
 		},
 		{
 			"name" : "CMAKE_INSTALL_PREFIX",
@@ -1267,7 +1267,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "D:/User/STM32_Code/Test/cmake-build-debug"
+			"value" : "D:/sample/STM32F103C8T6/Test/cmake-build-debug"
 		},
 		{
 			"name" : "Test_IS_TOP_LEVEL",
@@ -1291,7 +1291,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "D:/User/STM32_Code/Test"
+			"value" : "D:/sample/STM32F103C8T6/Test"
 		}
 	],
 	"kind" : "cache",

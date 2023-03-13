@@ -1,8 +1,8 @@
 Dependencies for Project 'Test', Target 'Test': (DO NOT MODIFY !)
 F (startup_stm32f103xb.s)(0x640BEECE)(--cpu Cortex-M3 -g --apcs=interwork -I.\RTE\_Test-ID:\KEIL_526\setup_path\ARM\PACK\ARM\CMSIS\5.4.0\CMSIS\Core\Include-ID:\KEIL_526\setup_path\ARM\PACK\Keil\STM32F1xx_DFP\2.4.0\Device\Include--pd "__UVISION_VERSION SETA 526" --pd "_RTE_ SETA 1" --pd "STM32F10X_MD SETA 1"--list startup_stm32f103xb.lst --xref -o test\startup_stm32f103xb.o --depend test\startup_stm32f103xb.d)
-F (../Core/Src/main.c)(0x640CAF8D)(--c99 -c --cpu Cortex-M3 -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include-I.\RTE\_Test-ID:\KEIL_526\setup_path\ARM\PACK\ARM\CMSIS\5.4.0\CMSIS\Core\Include-ID:\KEIL_526\setup_path\ARM\PACK\Keil\STM32F1xx_DFP\2.4.0\Device\Include-D__UVISION_VERSION="526" -D_RTE_ -DSTM32F10X_MD -DUSE_HAL_DRIVER -DSTM32F103xB-o test\main.o --omf_browse test\main.crf --depend test\main.d)
+F (../Core/Src/main.c)(0x640D3B0C)(--c99 -c --cpu Cortex-M3 -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include-I.\RTE\_Test-ID:\KEIL_526\setup_path\ARM\PACK\ARM\CMSIS\5.4.0\CMSIS\Core\Include-ID:\KEIL_526\setup_path\ARM\PACK\Keil\STM32F1xx_DFP\2.4.0\Device\Include-D__UVISION_VERSION="526" -D_RTE_ -DSTM32F10X_MD -DUSE_HAL_DRIVER -DSTM32F103xB-o test\main.o --omf_browse test\main.crf --depend test\main.d)
 I (D:\KEIL_526\setup_path\ARM\ARMCC\include\stdio.h)(0x599EDB3C)
-I (../Core/Inc/main.h)(0x640CACE2)
+I (../Core/Inc/main.h)(0x640D3643)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h)(0x63638BCD)
 I (../Core/Inc/stm32f1xx_hal_conf.h)(0x640BEECC)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h)(0x63638BCD)
@@ -32,7 +32,7 @@ I (../Core/Inc/usart.h)(0x640BEE80)
 I (../Core/Inc/gpio.h)(0x640BEE80)
 F (../Core/Src/gpio.c)(0x640BEE80)(--c99 -c --cpu Cortex-M3 -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include-I.\RTE\_Test-ID:\KEIL_526\setup_path\ARM\PACK\ARM\CMSIS\5.4.0\CMSIS\Core\Include-ID:\KEIL_526\setup_path\ARM\PACK\Keil\STM32F1xx_DFP\2.4.0\Device\Include-D__UVISION_VERSION="526" -D_RTE_ -DSTM32F10X_MD -DUSE_HAL_DRIVER -DSTM32F103xB-o test\gpio.o --omf_browse test\gpio.crf --depend test\gpio.d)
 I (../Core/Inc/gpio.h)(0x640BEE80)
-I (../Core/Inc/main.h)(0x640CACE2)
+I (../Core/Inc/main.h)(0x640D3643)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h)(0x63638BCD)
 I (../Core/Inc/stm32f1xx_hal_conf.h)(0x640BEECC)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h)(0x63638BCD)
@@ -60,7 +60,7 @@ I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h)(0x63638BCD)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h)(0x63638BCD)
 F (../Core/Src/usart.c)(0x640BEE80)(--c99 -c --cpu Cortex-M3 -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include-I.\RTE\_Test-ID:\KEIL_526\setup_path\ARM\PACK\ARM\CMSIS\5.4.0\CMSIS\Core\Include-ID:\KEIL_526\setup_path\ARM\PACK\Keil\STM32F1xx_DFP\2.4.0\Device\Include-D__UVISION_VERSION="526" -D_RTE_ -DSTM32F10X_MD -DUSE_HAL_DRIVER -DSTM32F103xB-o test\usart.o --omf_browse test\usart.crf --depend test\usart.d)
 I (../Core/Inc/usart.h)(0x640BEE80)
-I (../Core/Inc/main.h)(0x640CACE2)
+I (../Core/Inc/main.h)(0x640D3643)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h)(0x63638BCD)
 I (../Core/Inc/stm32f1xx_hal_conf.h)(0x640BEECC)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h)(0x63638BCD)
@@ -87,7 +87,7 @@ I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash_ex.h)(0x63638BCD)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h)(0x63638BCD)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h)(0x63638BCD)
 F (../Core/Src/stm32f1xx_it.c)(0x640BF0AA)(--c99 -c --cpu Cortex-M3 -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include-I.\RTE\_Test-ID:\KEIL_526\setup_path\ARM\PACK\ARM\CMSIS\5.4.0\CMSIS\Core\Include-ID:\KEIL_526\setup_path\ARM\PACK\Keil\STM32F1xx_DFP\2.4.0\Device\Include-D__UVISION_VERSION="526" -D_RTE_ -DSTM32F10X_MD -DUSE_HAL_DRIVER -DSTM32F103xB-o test\stm32f1xx_it.o --omf_browse test\stm32f1xx_it.crf --depend test\stm32f1xx_it.d)
-I (../Core/Inc/main.h)(0x640CACE2)
+I (../Core/Inc/main.h)(0x640D3643)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h)(0x63638BCD)
 I (../Core/Inc/stm32f1xx_hal_conf.h)(0x640BEECC)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h)(0x63638BCD)
@@ -115,7 +115,7 @@ I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h)(0x63638BCD)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h)(0x63638BCD)
 I (../Core/Inc/stm32f1xx_it.h)(0x640BEE80)
 F (../Core/Src/stm32f1xx_hal_msp.c)(0x640BEE80)(--c99 -c --cpu Cortex-M3 -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include-I.\RTE\_Test-ID:\KEIL_526\setup_path\ARM\PACK\ARM\CMSIS\5.4.0\CMSIS\Core\Include-ID:\KEIL_526\setup_path\ARM\PACK\Keil\STM32F1xx_DFP\2.4.0\Device\Include-D__UVISION_VERSION="526" -D_RTE_ -DSTM32F10X_MD -DUSE_HAL_DRIVER -DSTM32F103xB-o test\stm32f1xx_hal_msp.o --omf_browse test\stm32f1xx_hal_msp.crf --depend test\stm32f1xx_hal_msp.d)
-I (../Core/Inc/main.h)(0x640CACE2)
+I (../Core/Inc/main.h)(0x640D3643)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h)(0x63638BCD)
 I (../Core/Inc/stm32f1xx_hal_conf.h)(0x640BEECC)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h)(0x63638BCD)

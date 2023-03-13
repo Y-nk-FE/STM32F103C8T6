@@ -31,7 +31,7 @@ extern "C" {
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
-#define MAX_UART1_LENBUF 1024
+#define MAX_UART1_LENBUF 10
 /* USER CODE END Includes */
 
 /* Exported types ------------------------------------------------------------*/

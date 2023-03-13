@@ -3,15 +3,22 @@
 
 # compile ASM with D:/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/bin/arm-none-eabi-gcc.exe
 # compile C with D:/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/bin/arm-none-eabi-gcc.exe
+# compile CXX with D:/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/bin/arm-none-eabi-g++.exe
 ASM_DEFINES = -DDEBUG -DSTM32F103xB -DUSE_HAL_DRIVER
 
-ASM_INCLUDES = -ID:\User\STM32_Code\Test\Core\Inc -ID:\User\STM32_Code\Test\Drivers\STM32F1xx_HAL_Driver\Inc -ID:\User\STM32_Code\Test\Drivers\STM32F1xx_HAL_Driver\Inc\Legacy -ID:\User\STM32_Code\Test\Drivers\CMSIS\Device\ST\STM32F1xx\Include -ID:\User\STM32_Code\Test\Drivers\CMSIS\Include
+ASM_INCLUDES = -ID:\sample\STM32F103C8T6\Test\Core\Inc -ID:\sample\STM32F103C8T6\Test\Drivers\STM32F1xx_HAL_Driver\Inc -ID:\sample\STM32F103C8T6\Test\Drivers\STM32F1xx_HAL_Driver\Inc\Legacy -ID:\sample\STM32F103C8T6\Test\Drivers\CMSIS\Device\ST\STM32F1xx\Include -ID:\sample\STM32F103C8T6\Test\Drivers\CMSIS\Include
 
 ASM_FLAGS = -g -mcpu=cortex-m3 -mthumb -mthumb-interwork -ffunction-sections -fdata-sections -fno-common -fmessage-length=0 -x assembler-with-cpp -Og -g
 
 C_DEFINES = -DDEBUG -DSTM32F103xB -DUSE_HAL_DRIVER
 
-C_INCLUDES = -ID:\User\STM32_Code\Test\Core\Inc -ID:\User\STM32_Code\Test\Drivers\STM32F1xx_HAL_Driver\Inc -ID:\User\STM32_Code\Test\Drivers\STM32F1xx_HAL_Driver\Inc\Legacy -ID:\User\STM32_Code\Test\Drivers\CMSIS\Device\ST\STM32F1xx\Include -ID:\User\STM32_Code\Test\Drivers\CMSIS\Include
+C_INCLUDES = -ID:\sample\STM32F103C8T6\Test\Core\Inc -ID:\sample\STM32F103C8T6\Test\Drivers\STM32F1xx_HAL_Driver\Inc -ID:\sample\STM32F103C8T6\Test\Drivers\STM32F1xx_HAL_Driver\Inc\Legacy -ID:\sample\STM32F103C8T6\Test\Drivers\CMSIS\Device\ST\STM32F1xx\Include -ID:\sample\STM32F103C8T6\Test\Drivers\CMSIS\Include
 
 C_FLAGS = -g -mcpu=cortex-m3 -mthumb -mthumb-interwork -ffunction-sections -fdata-sections -fno-common -fmessage-length=0 -Og -g -std=gnu11
+
+CXX_DEFINES = -DDEBUG -DSTM32F103xB -DUSE_HAL_DRIVER
+
+CXX_INCLUDES = -ID:\sample\STM32F103C8T6\Test\Core\Inc -ID:\sample\STM32F103C8T6\Test\Drivers\STM32F1xx_HAL_Driver\Inc -ID:\sample\STM32F103C8T6\Test\Drivers\STM32F1xx_HAL_Driver\Inc\Legacy -ID:\sample\STM32F103C8T6\Test\Drivers\CMSIS\Device\ST\STM32F1xx\Include -ID:\sample\STM32F103C8T6\Test\Drivers\CMSIS\Include
+
+CXX_FLAGS = -g -mcpu=cortex-m3 -mthumb -mthumb-interwork -ffunction-sections -fdata-sections -fno-common -fmessage-length=0 -Og -g -std=gnu++17
 
