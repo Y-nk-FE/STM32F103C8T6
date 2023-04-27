@@ -1,0 +1,8 @@
+﻿  SerialPort.cpp
+D:\sample\STM32F103C8T6\Test\UART_PC\SerialPort.cpp(92,3): error C2065: “将ANSI字符串转换为UNICODE字符串”: 未声明的标识符
+D:\sample\STM32F103C8T6\Test\UART_PC\SerialPort.cpp(101,4): error C2146: 语法错误: 缺少“;”(在标识符“bIsSuccess”的前面)
+D:\sample\STM32F103C8T6\Test\UART_PC\SerialPort.cpp(101,77): error C2664: “BOOL BuildCommDCBW(LPCWSTR,LPDCB)”: 无法将参数 1 从“char [50]”转换为“LPCWSTR”
+D:\sample\STM32F103C8T6\Test\UART_PC\SerialPort.cpp(101,61): message : 与指向的类型无关；强制转换要求 reinterpret_cast、C 样式强制转换或函数样式强制转换
+D:\Windows Kits\10\Include\10.0.19041.0\um\winbase.h(7231,1): message : 参见“BuildCommDCBW”的声明
+  main.cpp
+  正在生成代码...
